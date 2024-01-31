@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>detecting emotion</title>
+	<link rel="stylesheet" type="text/css" href=" {{url_for('static', filename='style.css')}}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body style="background-color:#695aa6; ">
+
+	
+
+	<div class="title">
+		<div class="quote both">
+			<h3 style="color: rgb(105, 44, 105); font-family: 'papyrus', cursive; font-weight: bold;">"{{quote}}"</h3>
+		</div>
+
+	  <img src="{{url_for('static', filename='face.jpg')}}" class="both">
+	  <br>
+	  <h1 class="display-4" style="color: rgb(173, 47, 173);">Feeling {{data}}!</h1>
+
+  
+	  <h1><button id="btn1" class="btn"><a style="text-decoration: none; color: #483d77;" href="{{url_for('index')}}" title=""><div class="box">Home Page</div></a></button>
+		<button id="btn2" class="btn"><a style="text-decoration: none; color: #483d77;" href="{{link}}" title=""><div class="box">Recommend videos</div></a></button></h1>
+  
+	  </div>
+  
+  
+		  
+
+</body>
+</html>
